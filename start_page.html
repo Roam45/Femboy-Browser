@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>💖 Femboy Start Page 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffe6f7, #e0b0ff);
+      font-family: "Comic Sans MS", cursive;
+      text-align: center;
+      padding-top: 100px;
+      color: #6a0572;
+    }
+    h1 {
+      font-size: 48px;
+      text-shadow: 0 0 10px #ffb6c1;
+    }
+    select, input[type="text"], button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 2px solid #ffb6c1;
+      background-color: #fff0fa;
+      font-size: 16px;
+    }
+    button {
+      background-color: #ffc0f0;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff94d7;
+    }
+    .heart {
+      font-size: 32px;
+      color: #ff94d7;
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Femboy Start Page 💖</h1>
+  <form onsubmit="search(); return false;">
+    <input type="text" id="query" placeholder="Search something cute~">
+    <select id="engine">
+      <option value="https://www.google.com/search?q=" selected>Google</option>
+      <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+      <option value="https://vyntr.com/search?q=">Vyntr</option>
+      <option value="https://www.bing.com/search?q=">Bing</option>
+    </select>
+    <button type="submit">✨ Search ✨</button>
+  </form>
+  <div class="heart">💖</div>
+
+  <script>
+    function search() {
+      const query = document.getElementById("query").value;
+      const engine = document.getElementById("engine").value;
+      if (query) {
+        window.location.href = engine + encodeURIComponent(query);
+      }
+    }
+  </script>
+</body>
+</html>
