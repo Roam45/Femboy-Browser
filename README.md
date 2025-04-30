@@ -1,1 +1,2 @@
-# Just another Browser except for **FEMBOYS :3**
+# Just another Browser
+# except for **FEMBOYS :3**
